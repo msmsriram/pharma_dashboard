@@ -1,34 +1,42 @@
 import streamlit as st
 import pandas as pd
-st.markdown(
-"""<style> 
+
+# with open('styles.css') as f:
+#     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+
+
+
+st.markdown("""<link rel="stylesheet" href="assets/css/styles.css" type="text/css"/>
+""", unsafe_allow_html=True)
+# st.markdown(
+# """<style> 
             
-div.st-emotion-cache-vdokb0 {
-    font-family: "Source Sans Pro", sans-serif;
-    margin-bottom: -1.3rem;
-}
+# div.st-emotion-cache-vdokb0 {
+#     font-family: "Source Sans Pro", sans-serif;
+#     margin-bottom: -1.3rem;
+# }
 
-div.st-emotion-cache-13ln4jf {
-    padding: 1rem 1rem 10rem;
-}
+# div.st-emotion-cache-13ln4jf {
+#     padding: 1rem 1rem 10rem;
+# }
 
-div.st-emotion-cache-dvne4q {
-    padding: 3rem 1.5rem;
-}
+# div.st-emotion-cache-dvne4q {
+#     padding: 3rem 1.5rem;
+# }
 
-button.st-emotion-cache-13ejsyy{
-    margin-left: 29px;
-}
+# button.st-emotion-cache-13ejsyy{
+#     margin-left: 29px;
+# }
 
-span.st-emotion-cache-10trblm {
-    margin-left: 310px;
-}
+# span.st-emotion-cache-10trblm {
+#     margin-left: 310px;
+# }
 
-div.user-select-none.svg-container{
-    position: relative;
-    width: 700px;
-    height: 400px;
-} </style> """, unsafe_allow_html=True)
+# div.user-select-none.svg-container{
+#     position: relative;
+#     width: 700px;
+#     height: 400px;
+# } </style>""", unsafe_allow_html=True)
 
 with st.sidebar:
     # st.image('https://www.vabysmo-hcp.com/content/dam/gene/vabysmo-hcp/logos/vabysmo-logo-og.genecoreimg.1200.png')
